@@ -1,12 +1,17 @@
-age =  int(input("vvedi vozrast: "))
+def checkAge():
+    age = input("vvedi vozrast: ")
+    if not age.isdigit():
+        print("Введи нормально")
+        return
 
-if age == 18:
-    print('ti norm')
+    age = int(age)
+    if age == 18:
+        print('ti norm')
 
-elif age >= 19:
-    print ('you big boy')
+    elif age >= 19:
+        print ('you big boy')
 
-elif age <= 17:
-    print ('you small boy')
+    elif age <= 17:
+        print ('you small boy')
 
-input()
+checkAge()
