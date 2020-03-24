@@ -1,5 +1,5 @@
 print('''vvedi parol': ''')
-parol =	input()
+age =	input()
 
 if age == str(18):
     print('ti norm')
